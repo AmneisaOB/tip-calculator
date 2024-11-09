@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <script defer src="./js/script.js"></script>
+  <body>
+    <main>
+      <header>
+        <img src="./images/logo.svg" alt="Splitter logo" class="logo">
+      </header>
+      <div class="container">
+        <div class="input-section">
+          <div class="user-input ">
+            <p class="text">Bill</p>
+            <input class="bill" id="billInput" name="bill" type="number" placeholder="0">
+            <div class="icon">
+              <img src="./images/icon-dollar.svg" alt="">
+            </div>
+          </div>
+          <div class="tip-amounts">
+            <p class="text">Select tip %</p>
+            <div class="grid-container">
+              <button class="btn" id="btn1">5%</button>
+              <button class="btn" id="btn2">10%</button>
+              <button class="btn active" id="btn3">15%</button>
+              <button class="btn" id="btn4">25%</button>
+              <button class="btn" id="btn5">50%</button>
+              <input id="custom" class="custom" type="text"  placeholder="Custom">
+            </div>
+          </div>
+          <div class="user-input people-amount">
+            <div class="input-text">
+              <p class="text">Number of people</p>
+              <span id="error"></span>
+            </div>
+            
+            <input name="people" id="peopleInput" type="number" placeholder="0">
+            <div class="icon">
+              <img src="./images/icon-person.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="output-section">
+          <div class="output">
+            <div class="result">
+              <div class="total-text">
+               <div class="total-text-1">
+                <p>Tip Amount</p>
+                <span>/ person</span>
+               </div>
+               <div class="total-text-2">
+                <p>Total</p>
+                <span>/ person</span>
+               </div>
+              </div>
+              <div class="total-amount">
+                <p id="tipAmount">$</p>
+                <p id="totalAmount">$</p>
+              </div>
+            </div>
+            <button class="reset" id="reset">reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>
